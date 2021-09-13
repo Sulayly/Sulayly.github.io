@@ -73,7 +73,7 @@ check_out_buton.addEventListener("click", function () {
 })
 
 end_buton.addEventListener("click", function () {
-    window.location.href = 'index.html';
+    window.location.href = 'https://sulayly.github.io/';
 })
 
 displayTotal = () => {
