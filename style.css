@@ -66,58 +66,89 @@ header {
 
 .cardParent {
 	margin: 35px;
-	padding-top: 140px;
+	padding-top: 120px;
 }
 
-.others {
-	background-color: transparent;
-	font-size: 16px;
-	letter-spacing: 1px;
-}
-
-.banner {
-	margin-left: -12px;
-}
-
-.input {
-	/* width: 350px; */
-	width: 250px;
-	height: 40px;
-	outline: none;
+.card {
+	float: left;
+	/* width: 298px;
+	height: 390px; */
+	width: 496px;
+	height: 496px;
+	background-color: white;
+	margin-top: 2px;
+	margin-left: 8%;
+	margin-bottom: 30px;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
-	border: 1px solid /*rgba(0,0,0,0)*/ gray;
-	background-color: whitesmoke;
-	border-radius: 6px;
-	padding: 24px;
-	margin-right: 6px;
-	margin-top: 27px;
-	font-family: 'Salacia Free Trial';
-	font-size: 16px;
-	letter-spacing: 2px;
-	color: black;
-
+	-6px -6px 10px -1px rgba(0,0,0,0.15);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 16px;
 }
 
-#search {
-	margin-top: 27px;
-	height: 50px;
+.cardTitle {
+	margin-left: 15px; 
+	border: 2px solid rgb(87, 85, 85);
+	border-radius: 1px;
+	/* padding: 4px;
+	width: 80px;
+	height: 18px; */
+	padding: 8px;
+	width: 160px;
+	height: 36px;
+	background-color: rgb(87, 85, 85);
 	color: white;
-	font-family: 'Salacia Free Trial' /*'St Marie Thin'*/;
-	letter-spacing: 3px;
+	text-align: center;
+	font-size: 24px;
 }
 
-.navbar {
-	padding: 10px;
-	color: #555;
-	cursor: pointer;
-	background: transparent;
+.favStar {
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	/* font-size: 24px; */
+	font-size: 36px;
+	background-color: transparent;
+	color: gold;
+}
+
+.myImage {
+	display: block;
+	/* margin-left: 20%; */
+	margin-left: 35%;
+	margin-top: 12px;
+	/* width: 180px;
+	height: 130px; */
+	width: 160px;
+	height: 160px;
+	background-color: transparent;
+
+}
+
+h4 {
+	font-family: 'St Marie Thin';
+	background-color: transparent;
+	margin-left: 8%;
+	margin-top: -4px;
+	font-size: 24px;
+	color: grey;
+}
+
+.para {
+	background-color: transparent;
+	margin-top: -15px;
+	margin-left: 8%;
+	/* width: 200px; */
+	width: 300px;
+	color: rgb(102, 201, 21);
+	font-size: 19px;
 }
 
 .buton {
 	display: inline;
-	width: 90px;
-	height: 40px;
+	/* width: 90px;
+	height: 40px; */
+	width: 200px;
+	height: 100px;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
 	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
 	border: 1px solid rgba(0,0,0,0);
@@ -172,14 +203,138 @@ header {
 	padding-top: 6px;
 }
 
+.altfavStar {
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	font-size: 24px;
+	background-color: transparent;
+	color: /*gold*/ red;
+}
+
+.favStar:hover {
+	cursor: pointer;
+} 
+
+.others {
+	background-color: transparent;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.banner {
+	margin-left: -12px;
+}
+
+.input {
+	/* width: 350px; */
+	width: 250px;
+	height: 40px;
+	outline: none;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid /*rgba(0,0,0,0)*/ gray;
+	background-color: whitesmoke;
+	border-radius: 6px;
+	padding: 24px;
+	margin-right: 6px;
+	margin-top: 27px;
+	font-family: 'Salacia Free Trial';
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: black;
+
+}
+
+#search {
+	margin-top: 27px;
+	height: 50px;
+	color: white;
+	font-family: 'Salacia Free Trial' /*'St Marie Thin'*/;
+	letter-spacing: 3px;
+}
+
+.navbar {
+	padding: 10px;
+	color: #555;
+	cursor: pointer;
+	background: transparent;
+}
+
+.buton {
+	display: inline;
+	width: 150px;
+	height: 70px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 6px;
+	outline: none;
+	background-color: rgb(102, 201, 21);
+	color: white;
+	font-family: 'St Marie Thin';
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
+.buton:hover {
+	box-shadow: inset  4px 4px 6px -1px rgba(0,0,0,0.2),
+				inset -4px -4px 6px -1px rgba(255, 255,255, 0.7),
+				-0.5px -0.5px 0px rgba(255, 255,255, 1),
+				0.5px 0.5px 0px  rgba(0, 0, 0, 0.15),
+				0px 12px 10px -10px  rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0,0,0,0.1);
+	transform: translateY(1px);
+	cursor: pointer;
+	transform: scale(1.0);
+	transition: transform 0.5s;
+	font-size: 16px;
+	padding-top: 6px;
+	color: white;
+}
+
+.done {
+	display: inline;
+	width: 150px;
+	height: 70px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 6px;
+	outline: none;
+	background-color: rgb(91, 126, 65);
+	color:  rgb(216, 211, 211);
+	font-family: 'St Marie Thin';
+	letter-spacing: 1px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.done:hover {
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid rgba(0,0,0,0);
+	transform: translateY(1px);
+	transform: scale(1.0);
+	transition: transform 0.5s;
+	font-size: 16px;
+	padding-top: 6px;
+}
+
 .smWidth {
-	/* float: right; */
 	display: block;
-	/* width: 45px; */
 	margin-left: 8%;
-	font-size: 14px;
-	letter-spacing: 0px;
 	font-family: 'Salacia Free Trial Regular';
+}
+
+.money {
+	float: right;
+	margin-right: 15px;
+	margin-top: -10%;
+	font-size: 24px;
+	letter-spacing: 3px;
+	font-family: 'Salacia Free Trial';
+	color: rgb(201, 21, 111);
 }
 
 p {
@@ -203,9 +358,6 @@ p {
 	font-size: 24px;
 	letter-spacing: 8px;
 	text-align: center;
-	/* text-align: left;
-	margin-left: 110px;
-	color: black; */
 }
 
 a {
@@ -293,103 +445,6 @@ sup {
 	font-family: serif;
 }
 
-.card {
-	float: left;
-	width: 298px;
-	height: /*305*/ 390px;
-	background-color: /*#e3edf7*/ white;
-	margin-top: 2px;
-	margin-left: 8%;
-	margin-bottom: 30px;
-	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-	-6px -6px 10px -1px /*rgba(255, 255,255, 0.7)*/ rgba(0,0,0,0.15);
-	border: 1px solid rgba(0,0,0,0);
-	border-radius: /*24*/ 16px;
-}
-
-.cardTitle {
-	margin-left: 15px;
-	border: 2px solid /*rgb(201, 21, 111)*/ rgb(87, 85, 85);
-	border-radius: 1px;
-	padding: 4px;
-	/* width: 62px; */
-	width: 80px;
-	height: 18px;
-	background-color: /*rgb(201, 21, 111)*/rgb(87, 85, 85);
-	color: white;
-	text-align: center;
-}
-
-.favStar {
-	float: right;
-	margin-right: 15px;
-	margin-top: 10px;
-	font-size: 24px;
-	background-color: transparent;
-	color: gold;
-}
-
-.altfavStar {
-	float: right;
-	margin-right: 15px;
-	margin-top: 10px;
-	font-size: 24px;
-	background-color: transparent;
-	color: /*gold*/ red;
-}
-
-.favStar:hover {
-	/* background-color: #e3edf7; */
-	cursor: pointer;
-	/* border: 8px solid #e3edf7;
-	border-radius: 4px;
-	margin-right: 9px;
-	margin-top: 9px; */
-} 
-
-.myImage {
-	display: block;
-	margin-left: 20%;
-	margin-top: 12px;
-	width: 180px;
-	height: 130px;
-	/*border-radius: 53px 12px;*/
-	background-color: transparent /*rgb(238, 230, 230)*/;
-
-}
-
-.apple {
-	width: 130px;
-	margin-left: 25%;
-}
-
-h4 {
-	font-family: 'St Marie Thin';
-	background-color: transparent;
-	margin-left: 8%;
-	font-size: large;
-	color: grey;
-}
-
-.para {
-	background-color: transparent;
-	margin-top: -15px;
-	margin-left: 8%;
-	width: 200px;
-	color: rgb(102, 201, 21);
-}
-
-.money {
-	float: right;
-	margin-right: /*10%*/ 15px;
-	margin-top: -10%;
-	font-size: /*16px*/ 18px;
-	letter-spacing: 3px;
-	font-family: /*'Salacia Free Trial' 'Kuhlenbach Regular' 'St Marie Thin'*/ 'Salacia Free Trial';
-	color: /*green*/rgb(201, 21, 111);
-	
-}
-
 .none {
 	display: none;
 }
@@ -417,22 +472,6 @@ h4 {
 	margin-top: 2px;
 	margin-right: 12px;
 }
-
-
-/* Dropdown Button */
-/* .dropbtn {
-	background-color: #3498DB;
-	color: white; 
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-} */
-  
-/* Dropdown button on hover & focus */
-/* .dropbtn:hover, .dropbtn:focus {
-	background-color: #2980B9;
-} */
   
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -649,8 +688,8 @@ table {
 	border-radius: 6px;
 	outline: none;
 	background-color: rgb(102, 201, 21);
-	color: /*#e0113486, gold*/ white;
-	font-family: /*'St Marie Thin'*/ 'Salacia Free Trial';
+	color: white;
+	font-family: 'Salacia Free Trial';
 	letter-spacing: 2px;
 }
 
@@ -667,8 +706,7 @@ table {
 	transition: transform 0.5s;
 	font-size: 12px;
 	padding-top: 6px;
-	color: /*#4fce5d*/ white;
-	/* font-family: 'St Marie Thin'; */
+	color: white;
 }
 
 .none_cart_buton {
@@ -716,16 +754,5 @@ table {
 	transition: transform 0.5s;
 	font-size: 12px;
 	padding-top: 6px;
-	color: /*#4fce5d*/ white;
-	/* font-family: 'St Marie Thin'; */
-}
-
-#orange {
-	width: 120px;
-	margin-left: 90px;
-}
-
-#goat {
-	width: 120px;
-	margin-left: 90px;
+	color: white;
 }
