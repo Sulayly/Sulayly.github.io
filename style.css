@@ -35,7 +35,8 @@
 	width: 200px;
 	height: 30px;
 	padding-top: 10px;
-	margin-right: 20px;
+	/* margin-right: 20px; */
+	margin-right: 120px;
 	text-align: center;
 
 }
@@ -45,6 +46,8 @@
 	color: white;
 }
 
+
+/* made an edit below */
 header {
 	display: flex;
 	flex-wrap: wrap;
@@ -54,7 +57,10 @@ header {
 	margin-top: -37px;
 	position: fixed;
 	padding-top: 12px;
-	justify-content: center;
+	padding-left: 12px;
+	/* justify-content: center; */
+	justify-content: left;
+	/* justify-content: space-around; */
 	letter-spacing: 5px;
 	font-family: 'Salacia Free Trial';
 	background-color: white;
@@ -76,7 +82,7 @@ svg {
 }
 
 .input {
-	width: /*450px*/200px;
+	width: 450px/*200px*/;
 	height:40px;
 	outline: none;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
@@ -178,6 +184,10 @@ p {
 	display: inline-block;
 	background-color: transparent;
 	letter-spacing: normal;
+}
+
+.hove {
+	margin-left: 50px;
 }
 
 .hove:hover {
