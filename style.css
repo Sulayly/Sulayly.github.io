@@ -57,10 +57,9 @@ header {
 	margin-left: -5px;
 	margin-top: -37px;
 	position: fixed;
-	/* padding-top: 12px;
-	padding-left: 12px; */
 	padding: 24px;
-	justify-content: center;
+	/* justify-content: center; */
+	justify-content: left;
 	letter-spacing: 5px;
 	font-family: 'Salacia Free Trial';
 	background-color: white;
