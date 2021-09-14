@@ -82,7 +82,7 @@ svg {
 }
 
 .input {
-	width: 450px/*200px*/;
+	width: 350px/*200px*/;
 	height:40px;
 	outline: none;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
