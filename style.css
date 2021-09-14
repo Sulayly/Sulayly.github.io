@@ -248,10 +248,12 @@ h4 {
 
 #search {
 	margin-top: 27px;
+	width: 80px;
+	font-size: 12px;
 	height: 50px;
 	color: white;
 	font-family: 'Salacia Free Trial' /*'St Marie Thin'*/;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
 .navbar {
@@ -365,7 +367,7 @@ a {
 }
 
 a:link {
-	color: grey /*rgb(102, 201, 21)*/; 
+	color: grey; 
 	background-color: transparent;
 	text-decoration: none;
 }
