@@ -58,7 +58,7 @@ header {
 	margin-top: -37px;
 	position: fixed;
 	padding: 24px;
-	/* justify-content: center; */
+	padding-left: 6px;
 	justify-content: left;
 	letter-spacing: 5px;
 	font-family: 'Salacia Free Trial';
@@ -109,6 +109,9 @@ svg {
 	margin-right: 12px;
 	margin-top: 27px;
 	height: 50px;
+	color: white;
+	font-family: 'Salacia Free Trial' /*'St Marie Thin'*/;
+	letter-spacing: 3px;
 }
 
 .navbar {
@@ -128,8 +131,8 @@ svg {
 	border-radius: 6px;
 	outline: none;
 	background-color: rgb(102, 201, 21);
-	color: /*#e0113486, gold*/ white;
-	font-family: 'St Marie Thin' /*'Salacia Free Trial'*/;
+	color: white;
+	font-family: 'St Marie Thin';
 	letter-spacing: 1px;
 }
 
@@ -146,7 +149,7 @@ svg {
 	transition: transform 0.5s;
 	font-size: 12px;
 	padding-top: 6px;
-	color: /*#4fce5d*/ white;
+	color: white;
 }
 
 .done {
@@ -160,7 +163,7 @@ svg {
 	outline: none;
 	background-color: rgb(91, 126, 65)/*rgb(110, 112, 108) black*/;
 	color:  rgb(216, 211, 211);
-	font-family: 'St Marie Thin' /*'Salacia Free Trial'*/;
+	font-family: 'St Marie Thin';
 	letter-spacing: 1px;
 	cursor: pointer;
 }
@@ -567,10 +570,6 @@ th, td {
 	border-bottom: 1px solid #ddd;
 }
 
-/* td {
-	border-bottom: 1px solid #ddd;
-} */
-
 table {
 	border-spacing: 5px;
 }
@@ -594,12 +593,12 @@ table {
 	border: 1px solid rgb(102, 201, 21);
 	border-radius: 50%;
 	background: rgb(102, 201, 21);
-	padding-left: 4px;
-	padding-right: 4px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	color: white;
-	font-size: 10px;
+	font-size: 20px;
 }
 
 .counting {
