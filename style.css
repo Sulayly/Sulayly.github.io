@@ -52,7 +52,8 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	width: 101%;
-	height: 88px;
+	/* height: 88px; */
+	height: 176px;
 	margin-left: -5px;
 	margin-top: -37px;
 	position: fixed;
