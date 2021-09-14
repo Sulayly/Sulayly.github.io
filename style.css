@@ -28,14 +28,15 @@
 .legnd {
 	letter-spacing: 6px;
 	font-family: /*'St Marie Thin'*/ serif;
-	font-size: 16px;
+	/* font-size: 16px; */
+	font-size: 20px;
 	color: rgb(102, 201, 21);
 	background: black;
 	border-radius: 2px;
 	width: 200px;
 	height: 30px;
-	padding-top: 10px;
-	/* margin-right: 20px; */
+	/* padding-top: 10px; */
+	padding: 20px;
 	margin-right: 20px;
 	text-align: center;
 
@@ -52,19 +53,22 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	width: 101%;
-	/* height: 88px; */
-	height: 176px;
+	height: 88px;
 	margin-left: -5px;
 	margin-top: -37px;
 	position: fixed;
-	padding-top: 12px;
-	padding-left: 12px;
+	/* padding-top: 12px;
+	padding-left: 12px; */
+	padding: 24px;
 	justify-content: center;
-	/* justify-content: left; */
-	/* justify-content: space-around; */
 	letter-spacing: 5px;
 	font-family: 'Salacia Free Trial';
 	background-color: white;
+}
+
+.cardParent {
+	margin: 35px;
+	padding-top: 140px;
 }
 
 .others {
@@ -83,17 +87,19 @@ svg {
 }
 
 .input {
-	width: 350px/*200px*/;
-	height:40px;
+	width: 350px;
+	height: 40px;
 	outline: none;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
 	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
 	border: 1px solid /*rgba(0,0,0,0)*/ gray;
 	background-color: whitesmoke;
 	border-radius: 6px;
-	padding-left: 8px;
+	/* padding-left: 8px; */
+	padding: 24px;
 	margin-right: 6px;
-	margin-top: 17px;
+	/* margin-top: 17px; */
+	margin-top: 27px;
 	font-family: 'Salacia Free Trial';
 	font-size: 16px;
 	letter-spacing: 2px;
@@ -103,7 +109,9 @@ svg {
 
 #search {
 	margin-right: 12px;
-	margin-top: 17px;
+	/* margin-top: 17px; */
+	margin-top: 27px;
+	height: 50px;
 }
 
 .navbar {
@@ -189,6 +197,8 @@ p {
 
 .hove {
 	margin-left: 25px;
+	padding: 8px;
+	font-size: 20px;
 }
 
 .hove:hover {
@@ -728,9 +738,4 @@ table {
 #goat {
 	width: 120px;
 	margin-left: 90px;
-}
-
-.cardParent {
-	margin: 35px;
-	padding-top: 100px;
 }
