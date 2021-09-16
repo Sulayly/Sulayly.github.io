@@ -202,8 +202,8 @@ cards.forEach(card => {
             let totally = 0;
             subTotals.forEach(subTotal => {
                 totally -= subTotal.innerText * -1;
-                totally = totally.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                return total.innerHTML = totally;
+                return total.innerHTML = totally.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                  
             })
         })
     }
