@@ -48,14 +48,15 @@
 header {
 	display: flex;
 	flex-wrap: wrap;
-	/* width: 101%; */
 	width: 100%;
 	height: 88px;
 	margin-left: -5px;
 	margin-top: -37px;
 	position: fixed;
 	padding-top: 12px;
-	justify-content: center;
+	/* justify-content: center; */
+	padding-left: 12px;
+	justify-content: left;
 	letter-spacing: 5px;
 	font-family: 'Salacia Free Trial';
 	background-color: white;
