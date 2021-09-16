@@ -1,7 +1,8 @@
 /* check out fit-content very important later on */
 
 * {
-	background-color: /*#e3edf7*/  rgb(227, 233, 231);
+	background-color: rgb(227, 233, 231);
+	box-sizing: border-box;
 }
 
 @font-face {
@@ -25,36 +26,20 @@
 	src: local('St Marie Thin'), url('StMarie-Thin.woff') format('woff');
 }
 
-.legnd {
-	letter-spacing: 6px;
-	font-family: /*'St Marie Thin'*/ serif;
-	font-size: 16px;
-	color: rgb(102, 201, 21);
-	background: black;
-	border-radius: 2px;
-	width: 200px;
-	height: 30px;
-	padding-top: 10px;
-	margin-right: 20px;
-	text-align: center;
-
-}
-
 #market {
 	background: transparent;
 	color: white;
 }
 
 header {
-	display: flex;
-	flex-wrap: wrap;
+	display: inline-table;
 	width: 100%;
 	height: 88px;
-	margin-left: -5px;
+	/* height: 140px; */
+	margin-left: -12px;
 	margin-top: -37px;
 	position: fixed;
 	padding-top: 12px;
-	/* justify-content: center; */
 	padding-left: 12px;
 	justify-content: left;
 	letter-spacing: 5px;
@@ -62,32 +47,32 @@ header {
 	background-color: white;
 }
 
-.others {
-	background-color: transparent;
-	font-size: 16px;
+.legnd {
 	letter-spacing: 1px;
-}
-
-svg {
-	/* font-size: 24px; */
-	background-color: transparent;
-}
-
-.banner {
-	margin-left: -12px;
+	font-family: serif;
+	font-size: 16px;
+	color: rgb(102, 201, 21);
+	background: black;
+	border-radius: 2px;
+	width: 180px;
+	height: 30px;
+	padding-top: 5px;
+	margin-left: 0px;
+	margin-right: 6px;
+	text-align: center;
 }
 
 .input {
-	width: /*450px*/200px;
-	height:40px;
+	width: 200px;
+	height: 30px;
 	outline: none;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
 	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
-	border: 1px solid /*rgba(0,0,0,0)*/ gray;
+	border: 1px solid gray;
 	background-color: whitesmoke;
-	border-radius: 6px;
-	padding-left: 8px;
-	margin-right: 6px;
+	border-radius: 4px;
+	padding-left: 4px;
+	margin-right: 4px;
 	margin-top: 17px;
 	font-family: 'Salacia Free Trial';
 	font-size: 16px;
@@ -97,8 +82,80 @@ svg {
 }
 
 #search {
-	margin-right: 12px;
+	margin-right: 4px;
 	margin-top: 17px;
+	height: 30px;
+}
+
+.hove {
+	margin-top: 12px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.hove:hover {
+	color: yellowgreen;
+}
+
+.cardParent {
+	background-color: rgb(227, 233, 231); 
+	margin: 35px;
+	margin-left: -14px;
+	/* padding-top: 100px; */
+	padding-top: 240px;
+}
+
+body  {
+	background-color: rgb(227, 233, 231); 
+	/* background-color: white;  */
+}
+
+.card {
+	float: left;
+	width: 298px;
+	height: 390px;
+	background-color: white;
+	margin-top: 12px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(0,0,0,0.15);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 16px;
+}
+
+.cardTitle {
+	margin-left: 15px;
+	border: 2px solid rgb(87, 85, 85);
+	border-radius: 1px;
+	width: 84px;
+	height: 25px;
+	background-color: rgb(87, 85, 85);
+	color: white;
+	text-align: center;
+}
+
+.favStar {
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	font-size: 24px;
+	background-color: transparent;
+	color: gold;
+}
+
+.others {
+	background-color: transparent;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+svg {
+	background-color: transparent;
+}
+
+.banner {
+	margin-left: -12px;
 }
 
 .navbar {
@@ -180,10 +237,6 @@ p {
 	display: inline-block;
 	background-color: transparent;
 	letter-spacing: normal;
-}
-
-.hove:hover {
-	color: yellowgreen;
 }
 
 .titles {
@@ -281,42 +334,6 @@ sup {
 	font-family: serif;
 }
 
-.card {
-	float: left;
-	width: 298px;
-	height: /*305*/ 390px;
-	background-color: /*#e3edf7*/ white;
-	margin-top: 2px;
-	margin-left: 8%;
-	margin-bottom: 30px;
-	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-	-6px -6px 10px -1px /*rgba(255, 255,255, 0.7)*/ rgba(0,0,0,0.15);
-	border: 1px solid rgba(0,0,0,0);
-	border-radius: /*24*/ 16px;
-}
-
-.cardTitle {
-	margin-left: 15px;
-	border: 2px solid /*rgb(201, 21, 111)*/ rgb(87, 85, 85);
-	border-radius: 1px;
-	padding: 4px;
-	/* width: 62px; */
-	width: 80px;
-	height: 18px;
-	background-color: /*rgb(201, 21, 111)*/rgb(87, 85, 85);
-	color: white;
-	text-align: center;
-}
-
-.favStar {
-	float: right;
-	margin-right: 15px;
-	margin-top: 10px;
-	font-size: 24px;
-	background-color: transparent;
-	color: gold;
-}
-
 .altfavStar {
 	float: right;
 	margin-right: 15px;
@@ -327,12 +344,7 @@ sup {
 }
 
 .favStar:hover {
-	/* background-color: #e3edf7; */
 	cursor: pointer;
-	/* border: 8px solid #e3edf7;
-	border-radius: 4px;
-	margin-right: 9px;
-	margin-top: 9px; */
 } 
 
 .myImage {
@@ -341,8 +353,7 @@ sup {
 	margin-top: 12px;
 	width: 180px;
 	height: 130px;
-	/*border-radius: 53px 12px;*/
-	background-color: transparent /*rgb(238, 230, 230)*/;
+	background-color: transparent;
 
 }
 
@@ -391,7 +402,6 @@ h4 {
 	margin-top: 10px;
 	background: white;
 	border: 2px solid white;
-	/* border-radius: 8px; */
 	width: 300px;
 	height: 50px;
 	text-align: center;
@@ -405,22 +415,6 @@ h4 {
 	margin-top: 2px;
 	margin-right: 12px;
 }
-
-
-/* Dropdown Button */
-/* .dropbtn {
-	background-color: #3498DB;
-	color: white; 
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-} */
-  
-/* Dropdown button on hover & focus */
-/* .dropbtn:hover, .dropbtn:focus {
-	background-color: #2980B9;
-} */
   
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -492,7 +486,7 @@ img {
 	padding: 20px;
 	border: 1px solid #888;
 	border-radius: 6px;
-	width: 80%; /* Could be more or less, depending on screen size */
+	width: 40%; /* 80% Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -505,7 +499,7 @@ img {
 }
 
 .close:hover, .close:focus {
-	color: /*black*/red;
+	color: red;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -550,10 +544,6 @@ th, td {
 	text-align: center;
 	border-bottom: 1px solid #ddd;
 }
-
-/* td {
-	border-bottom: 1px solid #ddd;
-} */
 
 table {
 	border-spacing: 5px;
@@ -640,8 +630,8 @@ table {
 	border-radius: 6px;
 	outline: none;
 	background-color: rgb(102, 201, 21);
-	color: /*#e0113486, gold*/ white;
-	font-family: /*'St Marie Thin'*/ 'Salacia Free Trial';
+	color: white;
+	font-family: 'Salacia Free Trial';
 	letter-spacing: 2px;
 }
 
@@ -658,8 +648,7 @@ table {
 	transition: transform 0.5s;
 	font-size: 12px;
 	padding-top: 6px;
-	color: /*#4fce5d*/ white;
-	/* font-family: 'St Marie Thin'; */
+	color: white;
 }
 
 .none_cart_buton {
@@ -674,7 +663,7 @@ table {
 	display: block;
 	margin-left: 35%;
 	background: white;
-	color: /*green*/ rgb(102, 201, 21);
+	color: rgb(102, 201, 21);
 }
 
 .end_buton {
@@ -707,8 +696,7 @@ table {
 	transition: transform 0.5s;
 	font-size: 12px;
 	padding-top: 6px;
-	color: /*#4fce5d*/ white;
-	/* font-family: 'St Marie Thin'; */
+	color: white;
 }
 
 #orange {
@@ -719,9 +707,4 @@ table {
 #goat {
 	width: 120px;
 	margin-left: 90px;
-}
-
-.cardParent {
-	margin: 35px;
-	padding-top: 100px;
 }
