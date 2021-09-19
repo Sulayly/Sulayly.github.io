@@ -11,27 +11,16 @@ let myTab = document.querySelector("#myTab");
 
 search_input.addEventListener("input", filterCards);
 
-// search_button.addEventListener("click", filterCards);
-
-    // function filterCards() {
-    //     cards.forEach(card => {
-    //         if (card.children[0].innerHTML === search_input.value) {
-    //             console.log(search_input.value);
-    //             return card.classList.add("card");
-    //         }         
-    //         else if (card.children[0].innerHTML !== search_input.value) {
-    //             console.log(search_input.value);
-    //             return card.classList.add("none");
-    //         }
-    //     }) 
-    // }
-
-    function filterCards(event) {
-        console.log(event.target.value);
-        cards.forEach(card => {
-            card.children[0].innerHTML.toLowerCase().includes(event.target.value.toLowerCase());
-        })
-    }
+function filterCards(event) {
+    cards.forEach(card => {
+        if (card.children[0].innerHTML.toLowerCase().includes(event.target.value.toLowerCase())) {
+            return card;
+        }
+        else if (!card.children[0].innerHTML.toLowerCase().includes(event.target.value.toLowerCase())) {
+            return card.classList.add("none");
+        }
+    })
+}
 
 
 addCount = () => {

@@ -800,6 +800,10 @@ table {
 	width: 100%;
 }
 
+#Quant {
+	width: 70px;
+}
+
 @media only screen and (max-width: 600px) {
 	caption {
 		width: 80%;
@@ -808,19 +812,8 @@ table {
 }
 
 @media only screen and (max-width: 600px) {
-	tr {
-		width: 50%;
-		margin-left: -20px;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	#table_row {
-		width: 10%;
-		margin-left: -20px;
-	}
-}
-
-#Quant {
-	width: 70px;
+	 #cartItems {
+		width: 60px;
+		padding-left: -20px;
+	} 
 }
