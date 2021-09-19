@@ -32,20 +32,38 @@
 }
 
 header {
-	display: inline-table;
+	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	height: 88px;
-	/* height: 140px; */
-	margin-left: -12px;
+	margin-left: -6px;
 	margin-top: -37px;
 	position: fixed;
 	padding-top: 12px;
 	padding-left: 12px;
-	justify-content: left;
+	justify-content: center;
 	letter-spacing: 5px;
 	font-family: 'Salacia Free Trial';
 	background-color: white;
 }
+
+@media only screen and (max-width: 600px) {
+	header {
+		display: inline-table;
+		width: 100%;
+		height: 88px;
+		margin-left: -7.5px;
+		margin-top: -37px;
+		position: fixed;
+		padding-top: 12px;
+		padding-left: 12px;
+		justify-content: left;
+		letter-spacing: 5px;
+		font-family: 'Salacia Free Trial';
+		background-color: white;
+	}
+}
+
 
 .legnd {
 	letter-spacing: 1px;
@@ -63,7 +81,7 @@ header {
 }
 
 .input {
-	width: 200px;
+	width: 180px;
 	height: 30px;
 	outline: none;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
@@ -100,14 +118,20 @@ header {
 .cardParent {
 	background-color: rgb(227, 233, 231); 
 	margin: 35px;
+	margin-bottom: -92px;
 	margin-left: -14px;
-	/* padding-top: 100px; */
-	padding-top: 240px;
+	padding-top: 80px;
+	overflow: auto;
 }
 
-body  {
-	background-color: rgb(227, 233, 231); 
-	/* background-color: white;  */
+@media only screen and (max-width: 600px) {
+	.cardParent {
+		background-color: rgb(227, 233, 231); 
+		margin: 35px;
+		margin-bottom: -92px;
+		margin-left: -14px;
+		padding-top: 240px;
+	}
 }
 
 .card {
@@ -116,12 +140,28 @@ body  {
 	height: 390px;
 	background-color: white;
 	margin-top: 12px;
-	margin-left: 20px;
+	margin-left: 80px;
 	margin-bottom: 30px;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
 	-6px -6px 10px -1px rgba(0,0,0,0.15);
 	border: 1px solid rgba(0,0,0,0);
 	border-radius: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+	.card {
+		float: left;
+		width: 298px;
+		height: 390px;
+		background-color: white;
+		margin-top: 12px;
+		margin-left: 20px;
+		margin-bottom: 30px;
+		box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+		-6px -6px 10px -1px rgba(0,0,0,0.15);
+		border: 1px solid rgba(0,0,0,0);
+		border-radius: 16px;
+	}
 }
 
 .cardTitle {
@@ -486,7 +526,18 @@ img {
 	padding: 20px;
 	border: 1px solid #888;
 	border-radius: 6px;
-	width: 40%; /* 80% Could be more or less, depending on screen size */
+	width: 80%; /* 80% Could be more or less, depending on screen size */
+}
+
+@media only screen and (max-width: 600px) {
+	.modal-content {
+		background-color: #fefefe;
+		margin: 6% auto; /* 15% from the top and centered */
+		padding: 20px;
+		border: 1px solid #888;
+		border-radius: 6px;
+		width: 80%; /* 80% Could be more or less, depending on screen size */
+	}
 }
 
 /* The Close Button */
@@ -587,7 +638,8 @@ table {
 #totally {
 	display: flex;
 	margin-left: 42.5%; 
-	margin-top: 12px;
+	/* margin-top: 12px; */
+	margin-top: 0px;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
 	-6px -6px 10px -1px /*rgba(255, 255,255, 0.7)*/ rgba(0,0,0,0.15);
 	border: 1px solid rgba(0,0,0,0);
@@ -610,6 +662,15 @@ table {
 	padding: 6px;
 }
 
+@media only screen and (max-width: 600px) {
+	#totally {
+		margin-left: 10%; 
+		letter-spacing: 3px;
+		background: transparent;
+		padding: 6px;
+	}
+}
+
 .hideTotal {
 	display: none;
 }
@@ -620,8 +681,10 @@ table {
 
 .cart_buton {
 	display: inline;
-	margin-left: 92%;
-	margin-top: 12px;
+	/* margin-left: 92%; */
+	margin-left: 45%;
+	/* margin-top: 12px; */
+	margin-top: 24px;
 	width: 90px;
 	height: 40px;
 	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
@@ -633,6 +696,25 @@ table {
 	color: white;
 	font-family: 'Salacia Free Trial';
 	letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+	.cart_buton {
+		display: inline;
+		margin-left: 35%;
+		margin-top: 24px;
+		width: 90px;
+		height: 40px;
+		box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+		-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+		border: 1px solid rgba(0,0,0,0);
+		border-radius: 6px;
+		outline: none;
+		background-color: rgb(102, 201, 21);
+		color: white;
+		font-family: 'Salacia Free Trial';
+		letter-spacing: 2px;
+	}
 }
 
 .cart_buton:hover {
@@ -700,11 +782,45 @@ table {
 }
 
 #orange {
- width: 135px;
-	margin-left: 90px;
+ width: 130px;
+ margin-left: 80px;
 }
 
 #goat {
 	width: 120px;
 	margin-left: 90px;
+}
+
+#apple {
+	width: 135px;
+	margin-left: 80px;
+}
+
+#cartItems {
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	caption {
+		width: 80%;
+		margin-left: -20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	tr {
+		width: 50%;
+		margin-left: -20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#table_row {
+		width: 10%;
+		margin-left: -20px;
+	}
+}
+
+#Quant {
+	width: 70px;
 }

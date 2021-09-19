@@ -9,30 +9,29 @@ let end = document.querySelector("#end");
 let end_buton = document.querySelector(".end_buton");
 let myTab = document.querySelector("#myTab");
 
-search_input.addEventListener("change", filterCards);
+search_input.addEventListener("input", filterCards);
 
-search_button.addEventListener("click", filterCards);
+// search_button.addEventListener("click", filterCards);
 
-    function filterCards() {
-        if (search_input.value.length > 0) {
-            cards.forEach(card => {
-                if (card.children[0].innerHTML === search_input.value) {
-                    card_parent.appendChild(card);
-                }         
-                else if (card.children[0].innerHTML !== search_input.value) {
-                    card_parent.removeChild(card);
-                    // search_input.value ="";
-                }
+    // function filterCards() {
+    //     cards.forEach(card => {
+    //         if (card.children[0].innerHTML === search_input.value) {
+    //             console.log(search_input.value);
+    //             return card.classList.add("card");
+    //         }         
+    //         else if (card.children[0].innerHTML !== search_input.value) {
+    //             console.log(search_input.value);
+    //             return card.classList.add("none");
+    //         }
+    //     }) 
+    // }
 
-                // else if (search_input.value === "") {
-                //     card_parent.appendChild(card);
-                // }
-            
-            }) 
-            search_input.value ="";
-        } 
+    function filterCards(event) {
+        console.log(event.target.value);
+        cards.forEach(card => {
+            card.children[0].innerHTML.toLowerCase().includes(event.target.value.toLowerCase());
+        })
     }
-    // REMEMBER YOU CAN USE ARRAY.FILTER!!!
 
 
 addCount = () => {
@@ -73,7 +72,7 @@ check_out_buton.addEventListener("click", function () {
 })
 
 end_buton.addEventListener("click", function () {
-    window.location.href = 'https://sulayly.github.io/';
+    window.location.href = '/index.html';
 })
 
 displayTotal = () => {
